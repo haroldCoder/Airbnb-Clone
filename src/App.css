@@ -13,3 +13,10 @@ a > div{
   font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   line-height: 22px;
 }
+.about-section{
+  background-image: url('./imgs/razercover.webp');
+  height: auto;
+}
+.main{
+  min-height: calc(78vh - 100px);
+}

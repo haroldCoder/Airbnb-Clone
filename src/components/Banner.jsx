@@ -26,7 +26,7 @@ class Banner extends react.Component {
                         <button className='text-purple-500 bg-neutral-300 py-4 shadow-md rounded-full px-10 font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150'>I`am Flexible</button>
                     </div>
                 </div>
-                <div className='px-5 py-7 d-flex mt-3' style={{borderBottom: "1px solid #CCC", flexWrap: "wrap"}}>
+                <div className='px-5 py-7 d-flex mt-3 shadow-sm shadow-gray-200' style={{flexWrap: "wrap"}}>
                     {
                         this.state.data.map((item, index) => (
                             <Card location={item.Location} price={item.Price} img={item.img} dist={item.dist} />
