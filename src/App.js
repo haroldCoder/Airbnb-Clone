@@ -18,9 +18,20 @@ function App() {
             <Route path="/about" element={<About/>}/>
           </Routes>
         </div>
-        <footer className='bg-black h-22 w-100 d-flex px-10 pr-20 items-center mt-5 static' style={{bottom: "0"}}>
-          <img src={koder2} alt="" className='rounded-full' style={{width: "120px", height: "110px"}} />
-          <h2 className='text-cyan-400 sticky' style={{left: "30%"}}>Copyright ©Coderx Development 2021</h2>
+        <footer className='bg-black h-22 w-100 d-flex px-10 pr-20 mt-5 static' style={{bottom: "0", flexFlow: "column"}}>
+          <div className='d-flex items-center w-100 py-4'>
+            <img src={koder2} alt="" className='rounded-full' style={{width: "120px", height: "110px"}} />
+            <div className='sticky' style={{left: "30%"}}>
+              <h2 className='text-cyan-400' >Copyright ©Coderx Development 2022</h2>
+              <div className='w-100 d-flex px-5 justify-between mt-3'>
+                <span className='text-white'>• Develop Web</span>
+                <span className='text-white'>• Code Web</span>
+                <span className='text-white'>• Programing</span>
+                <span className='text-white'>• data scientify</span>
+              </div>           
+            </div>
+          </div>
+          
         </footer>
       </div>
     </BrowserRouter>

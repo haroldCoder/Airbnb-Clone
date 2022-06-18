@@ -16,7 +16,51 @@ a > div{
 .about-section{
   background-image: url('./imgs/razercover.webp');
   height: auto;
+  background-size: 55%;
+  background-position: left;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 100px 20px;
+}
+.inner-container{
+  width: 55%;
+  float: right;
+  background: #2b2b2b;
+  padding: 80px;
+  height: 55%;
+}
+.inner-container > h1{
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+.text{
+  font-size: 13px;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.skills{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
 }
 .main{
   min-height: calc(78vh - 100px);
+  
 }
+@media screen and (max-width: 1200px){
+  .about-section{
+    background-size: 100%;
+    padding: 20px;
+  }
+  .inner-container{
+    width: 60%;
+    float: none;
+    padding: 20px;
+    width: 100%;
+  }
+}
+  
