@@ -28,6 +28,13 @@ export default class Create extends react.Component {
             "Price": this.state.price,
             "img": this.state.img,
             "dist": this.state.dist
+        }).then((res)=>{
+            if(res.data != "ok create"){
+                alert("An ocurred error");
+            }
+            else{
+                alert(res.data);
+            }
         })
     }
     render() {

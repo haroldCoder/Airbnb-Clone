@@ -1,6 +1,8 @@
 import react from 'react';
 import axios from 'axios';
 import Card from './Card';
+import { data } from 'autoprefixer';
+import notfound from '../imgs/notfound.png'
 
 class Banner extends react.Component {
     state = {
@@ -28,9 +30,15 @@ class Banner extends react.Component {
                 </div>
                 <div className='px-5 py-7 d-flex mt-3 shadow-sm shadow-gray-200' style={{flexWrap: "wrap"}}>
                     {
+                        this.state.data != "" ?
                         this.state.data.map((item, index) => (
                             <Card location={item.Location} price={item.Price} img={item.img} dist={item.dist} />
                         ))
+                        :
+                        <div className='flex content-center flex-wrap flex-col w-[100%]'>
+                            <img src={notfound} className='w-[20%]'  />
+                            <h1 className='text-3xl text-black text-center mt-5'>Not Found</h1>
+                        </div>
                     }
                 </div>
             </>
