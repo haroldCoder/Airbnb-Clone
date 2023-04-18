@@ -5,6 +5,7 @@ import {  BrowserRouter, BrowserRouter as Router, Route, Routes } from 'react-ro
 import Create from './components/Create';
 import koder2 from './imgs/koder2.png';
 import About from './components/About';
+import Help from './components/Help';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Banner/>}/>
             <Route path="/create" element={<Create/>}/>
             <Route path="/about" element={<About/>}/>
+            <Route path="/help" element={<Help/>} />
           </Routes>
         </div>
         <footer className='bg-black h-22 w-100 d-flex px-10 pr-20 mt-5 static' style={{bottom: "0", flexFlow: "column"}}>

@@ -1,4 +1,3 @@
-import react from 'react';
 import axios from 'axios';
 
 async function Update(location, price, img, dist) {
