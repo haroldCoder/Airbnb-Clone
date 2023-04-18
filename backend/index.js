@@ -5,7 +5,7 @@ const mysql = require('mysql2');
 const cors = require('cors');
 const port = process.env.PORT || 8000;
 app.use(express.json())
-app.use(cors({ origin: ['http://localhost:3000', 'https://arbnb-clone-koderx.netlify.app/']}));
+app.use(cors());
 const {
     DB_HOST,
     DB_NAME,
