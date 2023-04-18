@@ -1,8 +1,8 @@
 import react from 'react';
 import axios from 'axios';
 import Card from './Card';
-import { data } from 'autoprefixer';
 import notfound from '../imgs/notfound.png'
+import { API_URL } from '../config';
 
 class Banner extends react.Component {
     state = {
@@ -15,7 +15,7 @@ class Banner extends react.Component {
         this.getDataPropertyes();
     }
     getDataPropertyes = async() => {
-        const data = await axios.get('http://localhost:8000/');
+        const data = await axios.get(API_URL);
         this.setState({data: data.data});
     }
     render() {

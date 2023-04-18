@@ -1,6 +1,7 @@
 import react from 'react';
 import axios from 'axios';
 import Update from '../utils/Update';
+import { API_URL } from '../config';
 
 export default class Create extends react.Component {
     state = {
@@ -23,7 +24,7 @@ export default class Create extends react.Component {
     }
     CreateProperty = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8000/', {
+        axios.post(API_URL, {
             "Location": this.state.location,
             "Price": this.state.price,
             "img": this.state.img,
