@@ -1,1 +1,1 @@
-export const API_URL = 'https://airbnb-clone-one-orcin.vercel.app/'
+export const API_URL = process.env.REACT_APP_API_URL;
